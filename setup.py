@@ -15,11 +15,7 @@ setup(
     packages=find_packages(),
     package_data={
         "maestral_qt": [
-            "resources/*.ui",
-            "resources/*.icns",
-            "resources/*.png",
-            "resources/*.svg",
-            "resources/*.desktop",
+            "resources/*",
         ],
     },
     python_requires=">=3.6",
@@ -30,7 +26,7 @@ setup(
         "maestral>=1.4.8",
         "markdown2",
         "packaging",
-        "PyQt5>=5.9",
+        "PyQt6",
     ],
     zip_safe=False,
     entry_points={
