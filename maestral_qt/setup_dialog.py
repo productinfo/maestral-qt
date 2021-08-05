@@ -69,7 +69,7 @@ class SetupDialog(QtWidgets.QDialog, Ui_SetupDialog):
             self.pushButtonFolderSelectionBack,
             self.pushButtonFolderSelectionSelect,
             self.pushButtonAuthPageCancel,
-            self.pushButtonDropboxPathCalcel,
+            self.pushButtonDropboxPathCancel,
             self.pushButtonClose,
         ):
             b.setMinimumWidth(width)
@@ -97,7 +97,7 @@ class SetupDialog(QtWidgets.QDialog, Ui_SetupDialog):
         self.pushButtonLink.clicked.connect(self.on_link_clicked)
         self.pushButtonAuthPageCancel.clicked.connect(self.on_reject_requested)
         self.pushButtonAuthPageLink.clicked.connect(self.on_auth_clicked)
-        self.pushButtonDropboxPathCalcel.clicked.connect(self.on_reject_requested)
+        self.pushButtonDropboxPathCancel.clicked.connect(self.on_reject_requested)
         self.pushButtonDropboxPathSelect.clicked.connect(
             self.on_dropbox_location_selected
         )
@@ -128,7 +128,7 @@ class SetupDialog(QtWidgets.QDialog, Ui_SetupDialog):
                 </body></html>
                 """
             )
-            self.pushButtonDropboxPathCalcel.setText("Quit")
+            self.pushButtonDropboxPathCancel.setText("Quit")
             self.stackedWidget.setCurrentIndex(2)
             self.stackedWidgetButtons.setCurrentIndex(2)
 
